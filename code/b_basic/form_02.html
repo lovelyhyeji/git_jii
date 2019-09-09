@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- form_02.html -->
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--[if lte IE 6]>
+		<script src="./ie/html5shiv-3.7.3/dist/html5shiv.min.js"></script>
+	<![endif]-->
+	<link rel="shortcut icon" type="image/x-icon" href="">
+	<link rel="apple-touch-icon" href="favicon.png">
+	<meta charset="UTF-8">
+	<title>웹 기초 이해하기</title>
+	<style>
+		
+	</style>
+</head>
+<body>
+	<!-- Layout -->
+	<h1>웹 기초 이해하기</h1>
+	<h2><abbr title="hiper text markup language version 5">
+	HTML5</abbr> 이전에 사용한 form 기능 이해하기2</h2>
+
+	<form action="#" method="post">
+
+	<fieldset>
+		<legend>입력형 type</legend>
+
+		<label for="userId">아이디를 입력하세요.</label>
+		<input type="text" id="userId" name="userId" value="" /><br />
+
+		<label for="userPw">비밀번호를 입력하세요.</label>
+		<input type="password" id="userPw" name="userPw" value="" /><br />
+
+	</fieldset>
+<!-- ============================================================= -->
+	<fieldset>
+		<legend>선택형 type</legend>
+		<P>다음 중 가장 괜찮은 사람을 고르시오.</P>
+		<ol>
+			<li>
+				<input type="radio" id="guy_01" name="sel_01" value="" />
+				<label for="">1. 그린컴퓨터 수원점 강사 이도형</label>
+			</li>
+			<li>
+				<input type="radio" id="guy_02" name="sel_01" value="" />
+				<label for="">2. xido쌤</label>
+			</li>
+			<li>
+				<input type="radio" id="guy_03" name="sel_01" value="" />
+				<label for="">3. 2019년 8월 13일부터 강의하는 강사</label>
+			</li>
+			<li>
+				<input type="radio" id="guy_04" name="sel_01" value="" />
+				<label for="">4. 지금 수업하고 있는 강사</label>
+			</li>
+		</ol>
+
+		<p>오늘 먹고싶은 음식을 선택하시오.</p>
+		<ul>
+			<li>
+				<input type="checkbox" id="selfood_01" name="food_01" value="칼국수" />				
+				<label for="">칼국수</label>
+			</li>
+			<li>
+				<input type="checkbox" id="selfood_02" name="food_01" value="짬뽕" />
+				<label for="">짬뽕</label>
+			</li>
+			<li>
+				<input type="checkbox" id="selfood_03" name="food_01" value="짜장면" />
+				<label for="">짜장면</label>
+			</li>
+			<li>
+				<input type="checkbox" id="selfood_04" name="food_01" value="스파게티" />
+				<label for="">스파게티</label>
+			</li>
+			<li>
+				<input type="checkbox" id="selfood_05" name="food_01" value="떡볶이" />
+				<label for="">떡볶이</label>
+			</li>
+		</ul>
+	</fieldset>
+<!-- ============================================================= -->
+	<fieldset>
+		<!-- input type 형식에서 버튼 기능은 label을 사용하지 않아도 무방 -->
+		<legend>버튼형 type</legend>
+		<ul>
+			<li>
+				<input type="reset" name="cancel" value="취소" />
+			</li>
+			<li>
+				<input type="submit" name="ok" value="동의 및 전송" />
+			</li>
+			<li>
+				<input type="image" src="./favicon.png" alt="전송" name="ok" value="동의" />
+			</li>
+			<li>
+				<input type="file" name="data" value="" />
+				<!-- value에는 파일명이 들어감 -->
+			</li>
+			<li>
+				<input type="button" name="btn" value="약도보기" />
+			</li>
+		</ul>
+	</fieldset>
+<!-- ============================================================= -->
+	<fieldset>
+		<legend>특수형 type</legend>
+		<!-- hidden 관리자 형식에 필요한, 사용자에겐 드러나지 않게 감춘다 ex)개인정보 변경할 때 아이디만 고정해서 안 보이게-->
+		<input type="hidden" name="beforName" value="이전에사용한이름">
+	</fieldset>	
+<!-- ============================================================= -->
+	<fieldset>
+		<legend>멀티형 type</legend>
+
+		<label for="multiText">전송메세지</label>
+		<textarea cols="50" rows="30" name="multiText" value="" maxlength="100" id="multiText" readonly="readonly">건의사항</textarea>
+
+		<label for="selProduct">원하는 상품을 선택하세요.</label>
+		<select name="selProduct" id="selProduct" multiple="">
+				<option>선택하세요</option>
+			<optgroup label="전자기기">
+				<option value="스마트폰">스마트폰</option>
+				<option value="노트북">노트북</option>
+				<option value="볼펜">볼펜</option>
+				<option value="포스트잇">포스트잇</option>
+			</optgroup>
+			<optgroup label="음식">
+				<option value="">짜장면</option>
+				<option value="">토마토파스타</option>
+				<option value="">햄버거</option>
+			</optgroup>
+		</select>
+		<hr />
+
+		<button type="reset">취소 버튼 역할을 하는 요소</button>
+		<button type="submit">확인 버튼 역할을 하는 요소</button>
+		<button type="button">기본 버튼 역할을 하는 요소</button>
+		<!-- <button></button> 사용시 기본타입은 submit 
+		 << 양 옆 이동할 때 기본버튼을 씀 >>  -->
+	</fieldset>	
+	
+</body>
+</html>
