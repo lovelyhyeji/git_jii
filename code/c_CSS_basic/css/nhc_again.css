@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/* nhc_again.css */
+
+/* common */
+.clearfix:after,.clearfix::after{content:" "; display:block; clear:both; width:0; height:0;}
+.hidden{display:block; overflow:hidden; position:absolute; width:0; height:0;}
+
+#wrap{width:100%; min-width:1200px; height:3327px;}
+
+#headBox{width:100%; height:auto;}
+  .banner{height:40px; background-color:#666}
+  .nav{height:80px; background-color:#555}
+
+#main{height:855px; background-color:#444;}
+  .view
