@@ -1,0 +1,4 @@
+/* layout.css */
+.con_box{background-color:#ccc;}
+.con_box>div{box-sizing:border-box; border:1px solid #777;}
+

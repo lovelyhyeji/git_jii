@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko_KR">
+<head>
+  <meta charset="UTF-8">
+  <!-- meta:vp -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- meta:compat -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- 합쳐지고 최소화된 최신 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <!-- 부가적인 테마 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <title>bootstrap</title>
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap" class="container-fluid">
+    <h1>bootstrap 간단하게 연습해보기</h1>
+    <p class="btn btn-default">일반 텍스트 결과물 확인해보기</p>
+
+    <article class="con_box row">
+      <div class="col-md-4 col-sm-6 col-xs-8 col-sm-0 col-xs-offset-2">첫번째</div>
+      <div class="col-md-4 col-sm-6 col-xs-8 col-sm-0 col-xs-offset-2">두번째</div>
+      <div class="col-md-4 col-sm-4 col-xs-8 col-sm-0 col-xs-offset-2">세번째</div>
+      <!--
+        반응형을 위한,
+        부트스트랩은 class의 개념을 잘 파악하고 쓰면 된다. bootstrapk.com(한국) 
+        너비는 무조건 12등분으로 나뉜다.
+        row = clearfix 기능 무조건 써야한다.(예를 들어 float 썼는데 자식 값 없으면)
+        container 가로 전체가 안 차게 -fluid 붙이면 가로 전체 100%
+      -->
+    </article>
+
+    <ul>
+      <li><span class="glyphicon glyphicon-play-circle"> icon test 1</span></li>
+      <li><span class="glyphicon glyphicon-bookmark"> icon test 2</span></li>
+      <li><span class="glyphicon glyphicon-th"> icon test 3</span></li>
+      <li><span class="glyphicon glyphicon-screenshot"> icon test 4</span></li>
+      <li><span class="glyphicon glyphicon-floppy-saved"> icon test 5</span></li>
+    </ul>
+  </div>
+
+  <!-- script -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"></script>
+
+</body>
+</html>
